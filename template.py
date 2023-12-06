@@ -7,13 +7,10 @@ project_name='mlproject_with_mlflow' # this is the project name which i have giv
 
 
 # here i have taken one list which it contain the list of files or records 
-# here in the 1st record iam creating 1 folder named as .github then workflows then .gitkeep 
-# this is how we are arrainging the many folders config,components, utils etc which consist of constructuer file like __init__.py  inside the projectname folder which it is present inside the src folder 
-# here __init__.py is the constructor file which it makes the components folder as a local package because i want to import something from the component folder thats why we need to ready with constructure file which is __init__.py
 list_of_files = [                                 
-    ".github/workflows/.gitkeep",  
-    f"src/{project_name}/__init__.py",  
-    f"src/{project_name}/components/__init__.py", 
+    ".github/workflows/.gitkeep",  # here in the 1st record iam creating 1 folder named as .github then workflows then .gitkeep 
+    f"src/{project_name}/__init__.py",  # this is how we are arrainging the many folders config,components, utils etc which consist of constructuer file like __init__.py  inside the projectname folder which it is present inside the src folder 
+    f"src/{project_name}/components/__init__.py", # here __init__.py is the constructor file which it makes the components folder as a local package because i want to import something from the component folder thats why we need to ready with constructure file which is __init__.py
     f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/utils/common.py",
     f"src/{project_name}/config/__init__.py",
